@@ -18,6 +18,8 @@ import ttsu.game.tictactoe.TicTacToeGameState.Player;
 @RunWith(MockitoJUnitRunner.class)
 public class TicTacToeBoardPrinterTest {
   private TicTacToeBoardPrinter printer;
+  GameBoard board = new GameBoard(new Player[][] { {O, X, O}, {X, null, O}, {X, O, X}});
+
   @Mock
   private PrintStream printStream;
 
