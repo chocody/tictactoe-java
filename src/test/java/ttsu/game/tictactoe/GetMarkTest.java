@@ -1,3 +1,8 @@
+/* Copyright (C) 2024 Suntipap Chotimanont - All Rights Reserved
+ * You may use, distribute and modify this code under the terms of the MIT license.
+ */
+
+
 package ttsu.game.tictactoe;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -35,7 +40,7 @@ public class GetMarkTest {
         board = new GameBoard();
     }
 
-    // เช็คว่ามีหรือไม่เป็น True(T) หรือ False(F)
+    // เช็คว่าไม่มีหรือไม่เป็น null  True(T) ไม่เป็น null หรือ False(F) เป็น null
     // row (T,F) = a,b
     // col (T,F) = y,z
     // (T,T),(T,F)   ==>  (a,y),(a,z)
@@ -128,7 +133,3 @@ public class GetMarkTest {
         assertEquals(null, board.getMark(2,2));
     }
 }
-
-/* Copyright (C) 2024 Suntipap Chotimanont - All Rights Reserved
-You may use, distribute and modify this code under the terms of the MIT license.
-*/
